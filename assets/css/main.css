@@ -662,7 +662,7 @@ blockquote p {
 }
 
 code {
-	background: #fdfbec;
+	/*background: #fdfbec;*/
 	padding: 3px;
 }
 
