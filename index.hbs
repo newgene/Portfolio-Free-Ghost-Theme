@@ -8,7 +8,8 @@
     <div class="main__banner">
     <h1> MyGene.info</h1>
     <h2> Gene Annotation Query as a Service </h2>
-    <!--<p style="text-align: right; margin-right:300px;"><a href="#">Learn more</a></p>-->
+    <p id="button-wrap-inner"><a id="learnmore__btn_id", class="learnmore__btn" href="//speakerdeck.com/player/4f926da9cb4cd0001f00a1ff?">Learn more</a></p>
+
     <div class="whatsnew__div">What's new:</div>
     </div>
 
@@ -33,6 +34,7 @@
                     {{#if tags}}
                     <ul class="post__tags">
                         {{#foreach tags}}
+
                         <li class="post__tag"><a href="{{url}}" class="post__link post__tag_link">{{name}}</a>{{#if @last}} {{else}}, {{/if}}</li>
                         {{/foreach}}
                     </ul>
