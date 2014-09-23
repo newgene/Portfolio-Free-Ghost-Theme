@@ -7,5 +7,10 @@ $(document).ready(function() {
         removalDelay: 160,
         preloader: false,
         fixedContentPos: false
-    });    
+    });
+
+    $.ajax({url:"http://mygene.info/metadata",success:function(result){
+    $("#metadata_timestamp").html('Data last updated: <a href="http://mygene.info/metadata">' + result.timestamp.split('T')[0] + "</a>");
+  }});
+
 });
