@@ -6,7 +6,14 @@ $(document).ready(function() {
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-        fixedContentPos: false
+        fixedContentPos: false,
+        callbacks: {
+            open: function(){
+                if(ga){
+                    ga('send', 'event', 'button', 'click', 'learnmore_clicked');
+                }
+            }
+        }
     });
 
     $.ajax({url:"http://mygene.info/metadata",success:function(result){
