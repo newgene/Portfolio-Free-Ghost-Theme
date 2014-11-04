@@ -87,3 +87,83 @@
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
     opacity: 0;
 }
+
+
+/**
+ * white search box from http://www.bloggermint.com/demos/css3searchbox/
+ */
+.search-wrapper {
+   text-align: center;
+}
+#search-box {
+   height: 28px;
+   padding: 0px 0px 40px 0px;
+}
+
+#search-box #search {
+}
+
+#search-box #search input[type="text"] {
+    background: url(/assets/images/search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+
+#search-box #search input[type="text"]:focus {
+    width: 200px;
+}
+
+  /*the following css taken from http://legobot.uk/ */
+#search-result {
+    width: 500px;
+    margin: auto;
+}
+#search-results p {
+      font-size: 10px;
+      font-size: 1rem;
+      margin: 10px 0;
+}
+#search-results a {
+      background: #dddddd;
+      color: #444444;
+      display: block;
+      padding: 10px;
+      margin: 0 auto 10px;
+      opacity: 0.8;
+      text-decoration: none;
+      width: 70%;
+}
+#search-results a h2 {
+        font-size: 2.0rem;
+        margin: 0 0 5px;
+}
+#search-results a h4 {
+        font-size: 1.2rem;
+        margin: 10px 0 0;
+}
+#search-results a:hover {
+        background: #157dfb;
+        color: white;
+        opacity: 1;
+}
+#search-results a:nth-child(even) {
+        background: #eeeeee;
+}
+#search-results a:nth-child(even):hover {
+          background: #157dfb;
+          color: white;
+}

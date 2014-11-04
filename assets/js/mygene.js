@@ -18,6 +18,19 @@ $(document).ready(function() {
 
     $.ajax({url:"http://mygene.info/metadata",success:function(result){
     $("#metadata_timestamp").html('Data last updated: <a href="http://mygene.info/metadata">' + result.timestamp.split('T')[0] + "</a>");
-  }});
+    }});
+
+    //initialize ghostHunter
+    $("#search-field").ghostHunter({
+        results: "#search-results"
+    });
+
+    //auto search on typing
+    var thread = null;
+    $('#search-field').keyup(function() {
+        clearTimeout(thread);
+        var target = $(this);
+        thread = setTimeout(function() { target.submit(); }, 500);
+  });
 
 });

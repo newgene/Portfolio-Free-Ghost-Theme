@@ -14,6 +14,7 @@
     </p>
     <p id="metadata_timestamp"></p>
     <div class="whatsnew__div">What's new:</div>
+
     </div>
 
 
@@ -50,4 +51,12 @@
 
     {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}}
+    <div class="search-wrapper">
+        <div id="search-box">
+        <form method="get" action="/search" id="search">
+          <input id="search-field" name="q" type="text" size="40" placeholder="Search posts..." />
+        </form>
+        </div>
+        <section id="search-results"></section>
+    </div>
 </main>
