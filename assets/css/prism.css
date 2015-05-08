@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+python */
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+python+http&plugins=autolinker */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -84,7 +84,8 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.constant,
-.token.symbol {
+.token.symbol,
+.token.deleted {
 	color: #905;
 }
 
@@ -92,7 +93,8 @@ pre[class*="language-"] {
 .token.attr-name,
 .token.string,
 .token.char,
-.token.builtin {
+.token.builtin,
+.token.inserted {
 	color: #690;
 }
 
@@ -100,8 +102,7 @@ pre[class*="language-"] {
 .token.entity,
 .token.url,
 .language-css .token.string,
-.style .token.string,
-.token.variable {
+.style .token.string {
 	color: #a67f59;
 	background: hsla(0, 0%, 100%, .5);
 }
@@ -117,7 +118,8 @@ pre[class*="language-"] {
 }
 
 .token.regex,
-.token.important {
+.token.important,
+.token.variable {
 	color: #e90;
 }
 
@@ -129,3 +131,6 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+.token a {
+	color: inherit;
+}
