@@ -15,6 +15,19 @@
     </div>
 
 
+    <div class="main__banner">
+    <h1> MyGene.info</h1>
+    <h2> Gene Annotation Query as a Service </h2>
+    <p id="button-wrap-inner">
+        <a id="learnmore__btn_id", class="learnmore__btn" href="//speakerdeck.com/player/1274175027cb0132ab8f668b8ed88715">Learn more</a>
+        &nbsp;&nbsp;or&nbsp;&nbsp; <a id="learnmore__btn_id", class="learnmore__btn" href="http://mygene.info/v2/api">Try live API now</a>
+    </p>
+    <p id="metadata_timestamp"></p>
+    <div class="whatsnew__div">What's new:</div>
+
+    </div>
+
+
         {{! Each post will be output using this markup }}
         {{#foreach posts}}
         <article class="{{post_class}} post__wrapper" data-cols="4">
@@ -37,6 +50,7 @@
                     {{#if tags}}
                     <ul class="post__tags">
                         {{#foreach tags}}
+
                         <li class="post__tag"><a href="{{url}}" class="post__link post__tag_link">{{name}}</a>{{#if @last}} {{else}}, {{/if}}</li>
                         {{/foreach}}
                     </ul>
@@ -49,4 +63,12 @@
 
     {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}}
+    <div class="search-wrapper">
+        <div id="search-box">
+        <form method="get" action="/search" id="search">
+          <input id="search-field" name="q" type="text" size="40" placeholder="Search posts..." />
+        </form>
+        </div>
+        <section id="search-results"></section>
+    </div>
 </main>
