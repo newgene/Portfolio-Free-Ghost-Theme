@@ -1,4 +1,5 @@
-<header class="logo">
+<header>
+    <div class="logo">
     {{#if @blog.logo}}
     	<a class="logo__image" href="{{@blog.url}}">
     		<img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}" />
@@ -11,4 +12,5 @@
 	    <h2 class="logo__desc">{{@blog.description}}</h2>
 	    {{/if}}
     {{/if}}
+    </div>
 </header>

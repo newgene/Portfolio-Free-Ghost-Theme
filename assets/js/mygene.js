@@ -31,6 +31,10 @@ $(document).ready(function() {
         clearTimeout(thread);
         var target = $(this);
         thread = setTimeout(function() { target.submit(); }, 500);
-  });
+    });
 
+    // add see_also link
+    var see_also_html = '<div class="header__link">';
+    see_also_html += '   <span>See also: <a href="' + see_also_link + '" target="_blank">' + see_also_text + '</a></span></div>';
+    $('header').first().append(see_also_html);
 });

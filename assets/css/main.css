@@ -701,9 +701,9 @@ ul {
 }
 
 @media (max-width: 900px) {
-        .logo__image img {
-                width: 96px;
-        }
+    .logo__image img {
+        width: 96px;
+    }
 	.post__wrapper[data-cols="3"],
 	.post__wrapper[data-cols="4"] {
 		width: 50%;
