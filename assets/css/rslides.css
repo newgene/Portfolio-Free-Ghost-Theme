@@ -39,7 +39,7 @@
   }
 
 .rslides_container {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   position: relative;
   float: left;
   width: 100%;
@@ -125,7 +125,7 @@
 .centered-btns_tabs,
 .transparent-btns_tabs,
 .large-btns_tabs {
-  margin-top: 10px;
+  margin-top: -80px; /*10px;*/
   text-align: center;
   }
 
