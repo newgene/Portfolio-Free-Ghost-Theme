@@ -16,8 +16,8 @@ $(document).ready(function() {
         }
     });
 
-    $.ajax({url:"http://mygene.info/metadata",success:function(result){
-    $("#metadata_timestamp").html('Data last updated: <a href="http://mygene.info/metadata">' + result.timestamp.split('T')[0] + "</a>");
+    $.ajax({url: metadata_url,success:function(result){
+    $("#metadata_timestamp").html('Data last updated: <a href="' + metadata_url + '">' + result.timestamp.split('T')[0] + "</a>");
     }});
 
     //initialize ghostHunter
@@ -37,4 +37,15 @@ $(document).ready(function() {
     var see_also_html = '<div class="header__link">';
     see_also_html += '   <span>See also: <a href="' + see_also_link + '" target="_blank">' + see_also_text + '</a></span></div>';
     $('header').first().append(see_also_html);
+
+    //for rslides from responsiveslides.com
+    $("#learnmore_slider").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 2800,
+        namespace: "centered-btns"
+    });
+
 });
