@@ -173,6 +173,12 @@
   text-align: center;
 }
 
+@media (max-width: 900px) {
+    .slide_box{
+        height: 400px;
+    }
+}
+
 .slide_box h1:second-child {
 text-align: center;
 line-height: 500px;
