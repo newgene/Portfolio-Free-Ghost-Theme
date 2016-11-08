@@ -1,3 +1,8 @@
+// http://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
+function numberWithCommas(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 $(document).ready(function() {
 
     $("#learnmore__btn_id").magnificPopup({
@@ -16,9 +21,18 @@ $(document).ready(function() {
         }
     });
 
+    // render metadata timestamp
     $.ajax({url: metadata_url,success:function(result){
     $("#metadata_timestamp").html('Data last updated: <a href="' + metadata_url + '">' + result.timestamp.split('T')[0] + "</a>");
     }});
+
+    // render api stats
+    $.ajax({url: api_stats_url, success:function(result){
+        var sessionsCount = result.totalsForAllResults['ga:sessions'];
+        var sessionCountFormatted  = numberWithCommas(sessionsCount);
+        $("#api_stats").html('<h3 style="margin:0;">'+sessionCountFormatted+'</h3><p style="margin:0;">requests in last 30 days</p>')
+    }});
+
 
     //initialize ghostHunter
     $("#search-field").ghostHunter({
