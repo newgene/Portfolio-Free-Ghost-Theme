@@ -36,6 +36,7 @@ $(document).ready(function() {
 
     //initialize ghostHunter
     $("#search-field").ghostHunter({
+        rss: feed_rss_url,  // this is defined in partials/config.hbs
         results: "#search-results"
     });
 
