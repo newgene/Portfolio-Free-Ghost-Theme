@@ -36,6 +36,7 @@ $(document).ready(function() {
 
     //initialize ghostHunter
     $("#search-field").ghostHunter({
+        rss: feed_rss_url,  // this is defined in partials/config.hbs
         results: "#search-results"
     });
 
@@ -47,10 +48,6 @@ $(document).ready(function() {
         thread = setTimeout(function() { target.submit(); }, 500);
     });
 
-    // add see_also link
-    var see_also_html = '<div class="header__link">';
-    see_also_html += '   <span>See also: <a href="' + see_also_link + '" target="_blank">' + see_also_text + '</a></span></div>';
-    $('header').first().append(see_also_html);
 
     //for rslides from responsiveslides.com
     $("#learnmore_slider").responsiveSlides({
