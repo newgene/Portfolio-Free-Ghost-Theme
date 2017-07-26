@@ -42,7 +42,7 @@ body {
 	box-sizing: border-box;
 }
 a {
-	color: #40B307;
+	color: #FD7400;
 	text-decoration: none;
 }
 a:active,
@@ -158,7 +158,7 @@ main {
 .logo__link:active,
 .logo__link:focus,
 .logo__link:hover {
-	color: #40B307;
+	color: #FD7400;
 }
 
 /*---------------------------------
@@ -183,13 +183,13 @@ main {
 .menu__item:active,
 .menu__item:focus,
 .menu__item:hover {
-	color: #40B307;
+	color: #FD7400;
 }
 
 .menu__item--active {
-	border-color: #40B307;
+	border-color: #FD7400;
 	border-radius: 2px;
-	color: #40B307;
+	color: #FD7400;
 }
 
 /*---------------------------------
@@ -240,7 +240,7 @@ main {
 }
 
 .social__icon:hover:before {
-	color: #40B307;
+	color: #FD7400;
 }
 
 .social__icon:before {
@@ -276,7 +276,7 @@ main {
 .pagination__item--link:active,
 .pagination__item--link:focus,
 .pagination__item--link:hover {
-	color: #40B307;
+	color: #FD7400;
 }
 .pagination__item--older {
 	padding: 0 25px 0 0;
@@ -434,7 +434,7 @@ main {
 .post__link:active,
 .post__link:focus,
 .post__link:hover {
-	color: #40B307;
+	color: #FD7400;
 }
 
 .post__date {
@@ -481,7 +481,7 @@ main {
 
 .post__meta:before {
 	bottom: 0;
-	color: #40B307;
+	color: #FD7400;
 	content: "i";
 	display: block;
 	font-size: 24px;
@@ -746,8 +746,8 @@ ul {
 	}
 
 	.menu__item--active {
-		background: #40B307;
-		border-color: #40B307;
+		background: #FD7400;
+		border-color: #FD7400;
 		color: #fff;
 	}
 
