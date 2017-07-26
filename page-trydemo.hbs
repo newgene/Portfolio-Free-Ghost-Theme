@@ -1,0 +1,18 @@
+{{!< default}}
+
+<main role="main">
+    <div class="main__wrapper">
+        {{#if @blog.navigation}}
+        	{{navigation}}
+        {{/if}}
+    {{#post}}
+        <div class="page__wrapper--demopg">
+            <iframe src="{{{title}}}" style="border:0px #ffffff none;" name="try_the_demo" scrolling="off" frameborder="1" marginheight="0px" marginwidth="0px" height=100% width=100% allowfullscreen></iframe>
+        </div>
+    {{/post}}
+        <div class="page__wrapper--framefollow ">
+        <a href="{{{title}}}" target="_blank"><button ID="expand_frame">Explore the demo further 
+        </button></a>
+        </div>
+    </div>
+</main>
