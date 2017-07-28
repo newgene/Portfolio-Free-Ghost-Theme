@@ -1,0 +1,14 @@
+{{!< default}}
+
+<main role="main">
+    <div class="main__wrapper">
+        {{#if @blog.navigation}}
+        	{{navigation}}
+        {{/if}}
+    {{#post}}
+        <div class="page__wrapper--apistatus">
+            <iframe src="{{{title}}}" style="border:0px #ffffff none;" scrolling="off" frameborder="1" marginheight="0px" marginwidth="0px" height="1200px" width=100% allowfullscreen></iframe>
+        </div>
+        {{/post}}
+    </div>
+</main>

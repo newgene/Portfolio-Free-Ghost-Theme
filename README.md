@@ -1,3 +1,11 @@
+# My(BioThings)-specific theme adjustments
+How the iframe-containing custom pages work:
+A page is created with a descriptive stub/slug name via the admin panel
+Copy/paste an existing page-slug.hbs and replace the slug name
+Return to the admin panel and change the title to the url which will be the source of the iframe
+Take care NOT to change the existing url of the page itself (should still keep the slug name)
+The iframe on that custom page should automatically pull the url from the page title.
+
 # Portfolio
 
 Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/).

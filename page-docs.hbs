@@ -1,0 +1,17 @@
+{{!< default}}
+
+<main role="main">
+    <div class="main__wrapper">
+        {{#if @blog.navigation}}
+        	{{navigation}}
+        {{/if}}
+        {{#post}}
+        <div class="page__wrapper--specialsubpage">
+            <iframe src="{{{title}}}" style="border:0px #ffffff none;" scrolling="off" frameborder="1" marginheight="0px" marginwidth="0px" height="600px" width=100% allowfullscreen></iframe>
+        </div>
+        <div class="page__wrapper--framefollow ">
+        <a href="{{{title}}}" target="_blank"><button ID="expand_frame">Go to Read the docs 
+        </button></a>
+        {{/post}}
+    </div>
+</main>
