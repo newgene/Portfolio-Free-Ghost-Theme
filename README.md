@@ -12,6 +12,7 @@ with:
 #40B307 for MyVariant
 #FD7400 for MyChem
 
+=======
 # Portfolio
 
 Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/).
