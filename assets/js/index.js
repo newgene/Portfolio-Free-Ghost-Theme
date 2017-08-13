@@ -250,5 +250,3 @@ function construct_tag(tag_name){
         });
     });
 }(jQuery));
-
-
