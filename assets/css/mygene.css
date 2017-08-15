@@ -69,7 +69,7 @@ button#expand_frame {
     background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)); /*Standard*/
     border:none;
     width:100%;
-    height:50px;
+    height:70px;
     border: none;
     padding: none;
     text-align:center;
