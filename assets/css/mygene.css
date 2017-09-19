@@ -69,7 +69,7 @@ button#expand_frame {
     background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)); /*Standard*/
     border:none;
     width:100%;
-    height:50px;
+    height:70px;
     border: none;
     padding: none;
     text-align:center;
@@ -341,3 +341,22 @@ Main site
           color: white;
 }
 
+/*-------------------------------
+ additional icons from fontawesome
+-------------------------------*/
+
+.social__icon__fa {
+	display: inline-block;
+	height: 25px;
+	overflow: hidden;
+    text-align: left;
+	width: 24px;
+	color: #ccc;
+	font-size: 25px;
+	line-height: 25px;
+    }
+.social__icon__fa:hover {
+	   color: #4082e2;
+    }
+
+.social__icon--fa--git:before { content: 'g'; } 
