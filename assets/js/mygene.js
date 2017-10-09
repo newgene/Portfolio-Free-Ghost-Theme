@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     // render metadata timestamp
     $.ajax({url: metadata_url,success:function(result){
-    $("#metadata_timestamp").html('Data last updated: <a href="' + metadata_url + '">' + result.timestamp.split('T')[0] + "</a>");
+    $("#metadata_timestamp").html('Data last updated: <a href="' + metadata_url + '">' + result.build_date.split('T')[0] + "</a>");
     }});
 
     // render api stats
